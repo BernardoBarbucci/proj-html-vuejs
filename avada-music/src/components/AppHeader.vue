@@ -13,12 +13,12 @@
                 {{ headerTitle }}
             </h1>
             <h2 class="fst-italic crimson-font">
-                <!-- {{ secondaryTitle }} -->
-                There is an untold story behind every favorite song.
+                {{ secondaryTitle }}
             </h2>
         </section>
     </header>
 </template>
+
 <script>
 export default {
     name: 'AppHeader',
@@ -26,10 +26,15 @@ export default {
         headerTitle: {
             type: String,
             default: 'Default title'
+        },
+        secondaryTitle: {
+            type: String,
+            default: 'Default secondary title'
         }
     }
 }
 </script>
+
 <style lang="scss">
 @import './style/partials/variables.scss';
 

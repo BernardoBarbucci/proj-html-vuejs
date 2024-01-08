@@ -1,5 +1,5 @@
 <template>
-    <AppHeader :headerTitle="headerTitle" />
+    <AppHeader :headerTitle="headerMainTitle" :secondaryTitle="headerSecondaryTitle" />
     <Appmain>
         <AppMusic />
         <AppNews />
@@ -31,7 +31,8 @@ export default {
     },
     data() {
         return {
-            headerTitle: 'Untold Stories'
+            headerMainTitle: 'Untold Stories',
+            headerSecondaryTitle: 'There is an untold story behind every favorite song.',
         };
     }
 }
