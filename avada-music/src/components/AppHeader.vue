@@ -5,15 +5,16 @@
                 <img src="./style/img/avada-music-logo.png" alt="logo">
             </div>
             <div class="custom_menu">
-                <i class="fa-solid fa-bars text-white"></i>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </section>
-        <section id="hero" class="d-flex justify-content-center">
+        <section id="hero" class="d-flex flex-column align-items-center">
             <h1 class="fw-bold text-white">
                 {{ headerTitle }}
             </h1>
-            <h2 class="">
-                {{ secondaryTitle }}
+            <h2 class="fst-italic crimson-font">
+                <!-- {{ secondaryTitle }} -->
+                There is an untold story behind every favorite song.
             </h2>
         </section>
     </header>
@@ -44,7 +45,20 @@ header {
     margin-bottom: 5rem;
 }
 
-#hero h1 {
-    font-size: 3.4rem;
+.custom_menu i {
+    color: $white;
+}
+
+#hero {
+    h1 {
+        font-size: 3.4rem;
+        color: $white;
+    }
+
+    h2 {
+        font-size: .8rem;
+        color: $white;
+
+    }
 }
 </style>
