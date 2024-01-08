@@ -1,8 +1,36 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppMain from './components/AppMain.vue';
+import AppComment from './components/AppComment.vue';
+import AppEvents from './components/AppEvents.vue';
+import AppFooter from './components/AppFooter.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppMusic from './components/AppMusic.vue';
+import AppNews from './components/AppNews.vue';
+
+export default {
+    name: 'App',
+    components: {
+        AppHeader,
+        AppMain,
+        AppComment,
+        AppEvents,
+        AppNews,
+        AppMusic,
+        AppFooter
+    }
+}
 </script>
 
-<template></template>
+<template>
+    <AppHeaderVue />
+    <Appmain>
+        <AppMusic />
+        <AppNews />
+        <AppComment />
+        <AppEvents />
+    </Appmain>
+    <AppFooter />
+</template>
 
 <style scoped></style>
 
