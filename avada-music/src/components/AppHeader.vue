@@ -1,6 +1,6 @@
 <template>
     <header class="container-fluid pt-2">
-        <section class="d-flex flex-row justify-content-between px-2">
+        <section class="d-flex flex-row justify-content-between px-3">
             <div class="custom_logo">
                 <img src="./style/img/avada-music-logo.png" alt="logo">
             </div>
@@ -12,9 +12,16 @@
             <h1 class="fw-bold text-white">
                 {{ headerTitle }}
             </h1>
-            <h2 class="fst-italic crimson-font">
+            <h2 class="fst-italic crimson-font mb-4">
                 {{ secondaryTitle }}
             </h2>
+            <div class="my_buttons d-flex justify-content-between">
+                <button type="button"
+                    class="custom_button text-white d-flex justify-content-center align-items-center">LATEST
+                    ALBUM</button>
+                <button type="button" class="btn btn-outline-light d-flex justify-content-center align-items-center">LIVE
+                    DATES</button>
+            </div>
         </section>
     </header>
 </template>
@@ -56,7 +63,7 @@ header {
 
 #hero {
     h1 {
-        font-size: 3.4rem;
+        font-size: 4rem;
         color: $white;
     }
 
@@ -64,6 +71,22 @@ header {
         font-size: .8rem;
         color: $white;
 
+    }
+}
+
+.my_buttons {
+    width: 12.5rem;
+
+    button {
+        height: 1.5rem;
+        border-radius: 2px;
+        width: 6rem;
+        font-size: .7rem;
+    }
+
+    .custom_button {
+        background-color: $theme-color;
+        border: none;
     }
 }
 </style>
