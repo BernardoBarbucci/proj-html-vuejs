@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'events',
+    name: 'AppEvents',
 }
 </script>
 <style lang="">

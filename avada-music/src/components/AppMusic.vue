@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'music',
+    name: 'AppMusic',
 }
 </script>
 <style lang="">

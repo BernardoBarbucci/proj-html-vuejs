@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'comment',
+    name: 'AppComment',
 }
 </script>
 <style lang="">

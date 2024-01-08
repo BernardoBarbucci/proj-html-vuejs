@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'news',
+    name: 'AppNews',
 }
 </script>
 <style lang="">
