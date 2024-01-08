@@ -1,3 +1,14 @@
+<template>
+    <AppHeader :headerTitle="headerTitle" />
+    <Appmain>
+        <AppMusic />
+        <AppNews />
+        <AppComment />
+        <AppEvents />
+    </Appmain>
+    <AppFooter />
+</template>
+
 <script>
 import AppMain from './components/AppMain.vue';
 import AppComment from './components/AppComment.vue';
@@ -17,20 +28,14 @@ export default {
         AppNews,
         AppMusic,
         AppFooter
+    },
+    data() {
+        return {
+            headerTitle: 'Untold Stories'
+        };
     }
 }
 </script>
-
-<template>
-    <AppHeaderVue />
-    <Appmain>
-        <AppMusic />
-        <AppNews />
-        <AppComment />
-        <AppEvents />
-    </Appmain>
-    <AppFooter />
-</template>
 
 <style lang="scss">
 @use './components/style/main.scss' as *;

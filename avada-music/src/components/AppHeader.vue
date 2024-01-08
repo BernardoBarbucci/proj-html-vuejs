@@ -1,6 +1,6 @@
 <template>
     <header class="container-fluid">
-        <section class="">
+        <section>
             <h1 class="fw-bold">
                 {{ headerTitle }}
             </h1>
@@ -13,7 +13,7 @@ export default {
     props: {
         headerTitle: {
             type: String,
-            default: 'Untold Stories'
+            default: 'Default title'
         }
     }
 }
