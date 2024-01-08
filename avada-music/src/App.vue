@@ -32,7 +32,9 @@ export default {
     <AppFooter />
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@use './components/style/main.scss' as *;
+</style>
 
 
 <!-- enter term
