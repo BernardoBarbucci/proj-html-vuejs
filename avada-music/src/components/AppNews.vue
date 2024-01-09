@@ -17,8 +17,17 @@
     </section>
     <section id="news" class="container-fluid">
         <div id="cardsWrapper" class="container-fluid col-10 offset-1 d-flex">
-            <div id="leftNews" class="col-8 my_border me-2">
-                <article class="xCard col-12 mb-3 border"></article>
+            <div id="leftNews" class="col-8 me-2">
+                <article class="xCard col-12 mb-3">
+                    <img src="./style/img/blog_music_techo-1200x600.jpg" class="mb-2" alt="mixer">
+                    <div class="my_description px-2">
+                        <h1 class="mb-1">
+                            While my guitar gently weeps
+                        </h1>
+                        <p class="crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Iusto asperiores laudantium debitis voluptas!</p>
+                    </div>
+                </article>
                 <div class="d-flex justify-content-between mb-3">
                     <article class="yCard">
                         <img src="./style/img/blog-post3-600x900.jpg" class="mb-2" alt="mixer">
@@ -41,7 +50,17 @@
                         </div>
                     </article>
                 </div>
-                <article class="xCard col-12 border"></article>
+                <article class="xCard col-12 border">
+                    <img src="./style/img/blog_music_techo-1200x600.jpg" class="mb-2" alt="mixer">
+                    <div class="my_description px-2">
+                        <h1 class="mb-1">
+                            While my guitar gently weeps
+                        </h1>
+                        <p class="crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Iusto asperiores laudantium debitis voluptas!</p>
+                    </div>
+
+                </article>
             </div>
             <div id="rightNews" class="col-4 d-flex flex-column justify-content-between">
                 <article class="yCard col-12">
@@ -90,11 +109,31 @@ export default {
 
 #cardsWrapper {
     max-width: 800px;
+    min-width: 560px;
     margin: auto;
 
     #leftNews {
         .xCard {
+            position: relative;
             height: 10rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .my_description {
+                min-height: 53.41px;
+                padding-top: .3rem;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: $bg-color-dark;
+
+                p {
+                    margin-bottom: .3rem;
+                }
+            }
         }
 
         .yCard {
