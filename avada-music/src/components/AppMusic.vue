@@ -22,6 +22,7 @@ export default {
     name: 'AppMusic',
 }
 </script>
+
 <style lang="scss" scoped>
 @import './style/partials/variables.scss';
 
