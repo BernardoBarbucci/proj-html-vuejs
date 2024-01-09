@@ -181,25 +181,4 @@ article {
         color: $p-text;
     }
 }
-
-.latestNews {
-    height: 5rem;
-    background-color: $theme-color;
-    transition: background-color linear 0.3s;
-
-    p {
-        font-size: 0.6rem;
-        color: inherit;
-        transition: color linear 0.3s;
-    }
-
-    &:hover {
-        background-color: $white;
-
-        // DA CONTROLLARE!!! NON FUNZIONA L'HOVER CHE DOVREBBE CAMBIARE IL TESTO DA BIANCO A NERO
-        & p {
-            color: black;
-        }
-    }
-}
 </style>
