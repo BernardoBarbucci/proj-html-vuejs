@@ -16,8 +16,19 @@
         </div>
     </section>
     <section id="news" class="container-fluid">
-        <div id="cardsWrapper" class="container col-8 offset-2 my_border">
-
+        <div id="cardsWrapper" class="container-fluid col-10 offset-1 px-md-5 d-flex my_border">
+            <div id="leftNews" class="col-9 my_border">
+                <article class="xCard col-12 mb-3 border"></article>
+                <div class="d-flex justify-content-between mb-3">
+                    <article class="yCard border"></article>
+                    <article class="yCard border"></article>
+                </div>
+                <article class="xCard col-12 border"></article>
+            </div>
+            <div id="rightNews" class="col-4 my_border">
+                <article class="yCard col-12 border"></article>
+                <article class="yCard col-12 border"></article>
+            </div>
         </div>
     </section>
 </template>
@@ -38,11 +49,23 @@ export default {
 
 // fine sass first section
 #news {
-    height: 40rem;
+    height: 50rem;
     background: $bg-color-darkest;
 }
 
 #cardsWrapper {
-    height: 95%;
+
+    #leftNews {
+        .xCard {
+            height: 8rem;
+        }
+
+        .yCard {
+            height: 20rem;
+            width: 48%;
+        }
+    }
+
+
 }
 </style>
