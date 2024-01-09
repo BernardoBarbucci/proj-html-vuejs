@@ -16,12 +16,37 @@
         </div>
     </section>
     <section id="events" class="container-fluid">
-        <div class="col-10 offset-1 my_border">
-            <article class="col-12 border custom_event"></article>
-            <article class="col-12 border custom_event"></article>
-            <article class="col-12 border custom_event"></article>
-            <article class="col-12 border custom_event"></article>
-            <article class="col-12 border custom_event"></article>
+        <div class="col-10 offset-1">
+            <article class="col-12 d-flex align-items-center custom_event">
+                <p class="mx-2 text-white">+</p>
+                <p class="event_name text-uppercase">
+                    17/08/2024 gem festival 2024 anakalia, georgia
+                </p>
+            </article>
+            <article class="col-12 d-flex align-items-center custom_event">
+                <p class="mx-2 text-white">+</p>
+                <p class="event_name text-uppercase">
+                    24/09/2024 groovefest dominical republic
+                </p>
+            </article>
+            <article class="col-12 d-flex align-items-center custom_event">
+                <p class="mx-2 text-white">+</p>
+                <p class="event_name text-uppercase">
+                    31/10/2024 oasis festival 2024 marrakech, morocco
+                </p>
+            </article>
+            <article class="col-12 d-flex align-items-center custom_event">
+                <p class="mx-2 text-white">+</p>
+                <p class="event_name text-uppercase">
+                    07/01/2024 moga festival - essaouria, morocco
+                </p>
+            </article>
+            <article class="col-12 d-flex align-items-center custom_event">
+                <p class="mx-2 text-white">+</p>
+                <p class="event_name text-uppercase">
+                    10/12/2024 envision festival - uvita, costa rica
+                </p>
+            </article>
         </div>
     </section>
 </template>
@@ -46,8 +71,17 @@ export default {
     div {
         .custom_event {
             background-color: $bg-color-dark;
-            height: 2rem;
+            min-height: 2rem;
             margin-bottom: .5rem;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .event_name {
+                font-size: .75rem;
+                color: $theme-color;
+            }
         }
     }
 }
