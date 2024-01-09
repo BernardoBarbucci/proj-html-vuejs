@@ -50,7 +50,7 @@
                         </div>
                     </article>
                 </div>
-                <article class="xCard col-12 border">
+                <article class="xCard col-12">
                     <img src="./style/img/blog_flavor_rock-600x300.jpg" class="mb-2" alt="rocker">
                     <div class="my_description px-2 pt-2">
                         <h1 class="mb-1">
