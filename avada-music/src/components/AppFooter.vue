@@ -5,7 +5,14 @@
                 <img src="./style/img/logo_footer.png" alt="logo footer">
             </div>
             <div class="footerInfos">
-
+                <ul class="d-flex flex-row">
+                    <li>Home</li>
+                    <li>Meet the Band</li>
+                    <li>Live Dates</li>
+                    <li>Latest News</li>
+                    <li>Albums</li>
+                    <li>Fans</li>
+                </ul>
             </div>
         </section>
     </footer>
@@ -29,6 +36,25 @@ footer {
             img {
                 padding-left: 1rem;
                 height: 1.8rem;
+            }
+        }
+
+        .footerInfos {
+            ul {
+                margin-bottom: 0;
+
+                li {
+                    list-style: none;
+                    font-size: .8rem;
+                    margin-right: .5rem;
+                    color: $p-text;
+                    transition: linear .3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        color: $white;
+                    }
+                }
             }
         }
     }
