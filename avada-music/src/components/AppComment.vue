@@ -26,8 +26,8 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 #custom_comment {

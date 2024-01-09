@@ -15,6 +15,15 @@
             </div>
         </div>
     </section>
+    <section id="events" class="container-fluid">
+        <div class="col-10 offset-1 my_border">
+            <article class="col-12 border custom_event"></article>
+            <article class="col-12 border custom_event"></article>
+            <article class="col-12 border custom_event"></article>
+            <article class="col-12 border custom_event"></article>
+            <article class="col-12 border custom_event"></article>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -28,5 +37,18 @@ export default {
 
 #sec_title {
     background-color: $bg-color-darkest;
+}
+
+#events {
+    background-color: $bg-color-darkest;
+    padding-bottom: 2rem;
+
+    div {
+        .custom_event {
+            background-color: $bg-color-dark;
+            height: 2rem;
+            margin-bottom: .5rem;
+        }
+    }
 }
 </style>
