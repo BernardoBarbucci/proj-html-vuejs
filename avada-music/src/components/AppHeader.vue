@@ -87,6 +87,12 @@ header {
     .custom_button {
         background-color: $theme-color;
         border: none;
+        transition: linear .18s;
+    }
+
+    .custom_button:hover {
+        background-color: black;
+        color: $white;
     }
 }
 </style>
