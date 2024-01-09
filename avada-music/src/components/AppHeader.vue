@@ -49,7 +49,6 @@ header {
     background-image: url('./style/img/home_slider.jpg');
     background-size: cover;
     background-position: center;
-    height: 25rem;
 }
 
 .custom_logo img {
@@ -62,6 +61,8 @@ header {
 }
 
 #hero {
+    height: 17.5rem;
+
     h1 {
         font-size: 4rem;
         color: $white;
@@ -70,7 +71,6 @@ header {
     h2 {
         font-size: .8rem;
         color: $white;
-
     }
 }
 

@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <main>
         <AppMusic />
         <AppNews />
@@ -16,7 +16,6 @@ import AppNews from './AppNews.vue';
 export default {
     name: 'AppMain',
     components: {
-        AppMain,
         AppComment,
         AppEvents,
         AppNews,
@@ -24,6 +23,5 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
-</style>
+
+<style lang="scss"></style>
