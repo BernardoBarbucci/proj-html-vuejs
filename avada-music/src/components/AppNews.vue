@@ -21,7 +21,14 @@
                 <article class="xCard col-12 mb-3 border"></article>
                 <div class="d-flex justify-content-between mb-3">
                     <article class="yCard border">
-
+                        <img src="./style/img/blog-post3-600x900.jpg" class="mb-2" alt="mixer">
+                        <div class="my_description px-2">
+                            <h1 class="mb-1">
+                                While my guitar gently weeps
+                            </h1>
+                            <p class="crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Iusto asperiores laudantium debitis voluptas!</p>
+                        </div>
                     </article>
                     <article class="yCard border"></article>
                 </div>
@@ -84,6 +91,11 @@ export default {
         .yCard {
             height: 20.4rem;
             width: 48%;
+
+            img {
+                height: 80%;
+                width: 100%;
+            }
         }
     }
 
