@@ -49,6 +49,11 @@
             </article>
         </div>
     </section>
+    <section class="latestNews d-flex align-items-center justify-content-center">
+        <p class="text-white mb-0">
+            VIEW ALL LIVE DATES
+        </p>
+    </section>
 </template>
 
 <script>
