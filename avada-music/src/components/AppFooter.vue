@@ -15,6 +15,14 @@
                 </ul>
             </div>
         </section>
+        <section id="copyright" class="col-12 d-flex align-items-center justify-content-between">
+            <div class="left-part">
+                <p></p>
+            </div>
+            <div class="right-part">
+                <!-- inserire icone da fontawesome dei 4 social (fb, X, insta, youtube) -->
+            </div>
+        </section>
     </footer>
 </template>
 <script>
@@ -58,5 +66,12 @@ footer {
             }
         }
     }
+
+    // seconda section
+    #copyright {
+        height: 5rem;
+        background-color: $bg-color-darkest;
+    }
 }
 </style>
+
