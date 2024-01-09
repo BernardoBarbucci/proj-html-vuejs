@@ -182,22 +182,42 @@ article {
     }
 }
 
+// .latestNews {
+//     height: 5rem;
+//     background-color: $theme-color;
+//     transition: background-color linear 0.3s;
+
+//     p {
+//         font-size: 0.6rem;
+//         color: inherit;
+//         background-color: black;
+//         transition: color linear 0.3s;
+//     }
+
+//     &:hover {
+//         background-color: $white;
+
+//         & p {
+//             color: black;
+//         }
+//     }
+// }
+
 .latestNews {
     height: 5rem;
-    background-color: $theme-color;
-    transition: background-color linear 0.3s;
 
     p {
         font-size: 0.6rem;
-        transition: color linear 0.3s;
+        background-color: $theme-color;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    &:hover {
-        background-color: $white;
-
-        p {
-            color: black;
-        }
+    p:hover {
+        color: black;
     }
 }
 </style>
