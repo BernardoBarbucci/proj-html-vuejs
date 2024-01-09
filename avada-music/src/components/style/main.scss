@@ -12,3 +12,26 @@
 .crimson-font {
     font-family: 'Crimson Text', serif;
 }
+
+// Appmusic 
+#sec_title {
+    background-color: $bg-color-dark;
+
+    .custom_title {
+        height: 6rem;
+
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.custom_hr {
+    color: $white;
+    width: 9rem;
+}
+
+#sec_parag {
+    font-size: .7rem;
+    color: $p-text;
+}

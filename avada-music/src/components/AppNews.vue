@@ -1,13 +1,13 @@
-<template lang="">
-    <div>
-        
-    </div>
+<template>
+    <section>
+
+    </section>
 </template>
+
 <script>
 export default {
     name: 'AppNews',
 }
 </script>
-<style lang="">
-    
-</style>
+
+<style lang="scss" scoped></style>
