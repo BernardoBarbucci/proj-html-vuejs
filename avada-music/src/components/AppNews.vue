@@ -185,9 +185,19 @@ article {
 .latestNews {
     height: 5rem;
     background-color: $theme-color;
+    transition: linear .3s;
 
     p {
         font-size: .6rem;
+        color: inherit;
+
+        .latestNews:hover & {
+            color: black;
+        }
+    }
+
+    &:hover {
+        background-color: $white;
     }
 }
 </style>
