@@ -86,7 +86,7 @@
             </div>
         </div>
     </section>
-    <section class="latestNews my_border d-flex align-items-center justify-content-center">
+    <section class="latestNews d-flex align-items-center justify-content-center">
         <p class="text-white mb-0">
             VIEW ALL THE LATEST NEWS
         </p>
@@ -185,19 +185,19 @@ article {
 .latestNews {
     height: 5rem;
     background-color: $theme-color;
-    transition: linear .3s;
+    transition: background-color linear 0.3s;
 
     p {
-        font-size: .6rem;
-        color: inherit;
-
-        .latestNews:hover & {
-            color: black;
-        }
+        font-size: 0.6rem;
+        transition: color linear 0.3s;
     }
 
     &:hover {
         background-color: $white;
+
+        p {
+            color: black;
+        }
     }
 }
 </style>
