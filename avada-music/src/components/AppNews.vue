@@ -18,27 +18,36 @@
     <section id="news" class="container-fluid">
         <div id="cardsWrapper" class="container-fluid col-10 offset-1 d-flex">
             <div id="leftNews" class="col-8 my_border me-2">
-                <article class="xCard col-12 mb-3 border">
-
-                </article>
+                <article class="xCard col-12 mb-3 border"></article>
                 <div class="d-flex justify-content-between mb-3">
-                    <article class="yCard border"></article>
+                    <article class="yCard border">
+
+                    </article>
                     <article class="yCard border"></article>
                 </div>
                 <article class="xCard col-12 border"></article>
             </div>
-            <div id="rightNews" class="col-4 d-flex flex-column justify-content-between my_border">
-                <article class="yCard col-12 border">
-                    <img src="./style/img/blog-post1-200x300.jpg" class="mb-3" alt="mixer">
+            <div id="rightNews" class="col-4 d-flex flex-column justify-content-between">
+                <article class="yCard col-12">
+                    <img src="./style/img/blog-post1-600x900.jpg" class="mb-2" alt="mixer">
                     <div class="my_description px-2">
                         <h1 class="mb-1">
                             Taking it back to the old school
                         </h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Iusto asperiores laudantium debitis voluptas!</p>
                     </div>
                 </article>
-                <article class="yCard col-12 border"></article>
+                <article class="yCard col-12">
+                    <img src="./style/img/blog-post2-600x900.jpg" class="mb-2" alt="guitarist">
+                    <div class="my_description px-2">
+                        <h1 class="mb-1">
+                            Sharing the stage with a legend
+                        </h1>
+                        <p class="crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Iusto asperiores laudantium debitis voluptas!</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -102,8 +111,9 @@ article {
     }
 
     p {
-        font-size: .5rem;
-        color: $white;
+        font-size: .55rem;
+        font-weight: bold;
+        color: $p-text;
     }
 }
 </style>
