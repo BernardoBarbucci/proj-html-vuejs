@@ -18,7 +18,9 @@
     <section id="news" class="container-fluid">
         <div id="cardsWrapper" class="container-fluid col-10 offset-1 d-flex">
             <div id="leftNews" class="col-8 my_border me-2">
-                <article class="xCard col-12 mb-3 border"></article>
+                <article class="xCard col-12 mb-3 border">
+
+                </article>
                 <div class="d-flex justify-content-between mb-3">
                     <article class="yCard border"></article>
                     <article class="yCard border"></article>
@@ -26,7 +28,16 @@
                 <article class="xCard col-12 border"></article>
             </div>
             <div id="rightNews" class="col-4 d-flex flex-column justify-content-between my_border">
-                <article class="yCard col-12 border"></article>
+                <article class="yCard col-12 border">
+                    <img src="./style/img/blog-post1-200x300.jpg" class="mb-3" alt="mixer">
+                    <div class="my_description px-2">
+                        <h1 class="mb-1">
+                            Taking it back to the old school
+                        </h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Iusto asperiores laudantium debitis voluptas!</p>
+                    </div>
+                </article>
                 <article class="yCard col-12 border"></article>
             </div>
         </div>
@@ -53,6 +64,8 @@ export default {
 }
 
 #cardsWrapper {
+    max-width: 800px;
+    margin: auto;
 
     #leftNews {
         .xCard {
@@ -60,15 +73,37 @@ export default {
         }
 
         .yCard {
-            height: 20rem;
+            height: 20.4rem;
             width: 48%;
         }
     }
 
     #rightNews {
         .yCard {
-            height: 20rem;
+            height: 20.7rem;
+
+            img {
+                height: 80%;
+                width: 100%;
+            }
         }
+    }
+}
+
+article {
+    background-color: $bg-color-dark;
+}
+
+.my_description {
+    h1 {
+        font-size: .7rem;
+        font-weight: bold;
+        color: $theme-color;
+    }
+
+    p {
+        font-size: .5rem;
+        color: $white;
     }
 }
 </style>
