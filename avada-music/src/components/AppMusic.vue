@@ -1,7 +1,7 @@
 <template>
     <section id="sec_title" class="container-fluid">
         <div class="row">
-            <div class="offset-4 col-4 pt-3 custom_title">
+            <div class="offset-4 col-4 pt-4 mb-3 custom_title">
                 <h1 class="text-white fw-bold d-flex justify-content-center">
                     Music is Life
                 </h1>
@@ -26,6 +26,8 @@ export default {
 @import './style/partials/variables.scss';
 
 #sec_title {
+    background-color: $bg-color-dark;
+
     .custom_title {
         border-top: .5rem solid $theme-color;
     }

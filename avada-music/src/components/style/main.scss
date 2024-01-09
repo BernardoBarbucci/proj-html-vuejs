@@ -5,7 +5,7 @@
     font-family: 'Mukta', sans-serif;
 }
 
-.border {
+.my_border {
     border: 2px solid limegreen;
 }
 
@@ -13,9 +13,9 @@
     font-family: 'Crimson Text', serif;
 }
 
-// Appmusic 
+// sass section di Appmusic riutilizzabile per altre parti simili  
 #sec_title {
-    background-color: $bg-color-dark;
+    // background-color: $bg-color-dark;
 
     .custom_title {
         height: 6rem;
@@ -35,3 +35,5 @@
     font-size: .7rem;
     color: $p-text;
 }
+
+// fine sass di AppMusic
