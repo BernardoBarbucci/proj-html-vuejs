@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import './style/partials/variables.scss';
 
 header {
@@ -65,7 +65,6 @@ header {
 
     h1 {
         font-size: 4rem;
-        color: $white;
     }
 
     h2 {

@@ -86,6 +86,11 @@
             </div>
         </div>
     </section>
+    <section class="latestNews my_border d-flex align-items-center justify-content-center">
+        <p class="text-white mb-0">
+            VIEW ALL THE LATEST NEWS
+        </p>
+    </section>
 </template>
 
 <script>
@@ -108,7 +113,7 @@ export default {
 }
 
 #cardsWrapper {
-    max-width: 800px;
+    max-width: 750px;
     min-width: 560px;
     margin: auto;
 
@@ -174,6 +179,15 @@ article {
         font-size: .55rem;
         font-weight: bold;
         color: $p-text;
+    }
+}
+
+.latestNews {
+    height: 5rem;
+    background-color: $theme-color;
+
+    p {
+        font-size: .6rem;
     }
 }
 </style>
