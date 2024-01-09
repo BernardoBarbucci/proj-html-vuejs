@@ -182,42 +182,24 @@ article {
     }
 }
 
-// .latestNews {
-//     height: 5rem;
-//     background-color: $theme-color;
-//     transition: background-color linear 0.3s;
-
-//     p {
-//         font-size: 0.6rem;
-//         color: inherit;
-//         background-color: black;
-//         transition: color linear 0.3s;
-//     }
-
-//     &:hover {
-//         background-color: $white;
-
-//         & p {
-//             color: black;
-//         }
-//     }
-// }
-
 .latestNews {
     height: 5rem;
+    background-color: $theme-color;
+    transition: background-color linear 0.3s;
 
     p {
         font-size: 0.6rem;
-        background-color: $theme-color;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        color: inherit;
+        transition: color linear 0.3s;
     }
 
-    p:hover {
-        color: black;
+    &:hover {
+        background-color: $white;
+
+        // DA CONTROLLARE!!! NON FUNZIONA L'HOVER CHE DOVREBBE CAMBIARE IL TESTO DA BIANCO A NERO
+        & p {
+            color: black;
+        }
     }
 }
 </style>
