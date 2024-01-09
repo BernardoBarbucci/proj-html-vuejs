@@ -1,7 +1,7 @@
 <template>
     <section id="sec_title" class="container-fluid">
         <div class="row">
-            <div class="offset-3 col-6 pt-4 mb-2 custom_title">
+            <div class="offset-3 col-6 pt-4 mb-1 custom_title">
                 <h1 class="text-white fw-bold d-flex justify-content-center">
                     Latest Band News
                 </h1>
@@ -20,9 +20,9 @@
             <div id="leftNews" class="col-8 me-2">
                 <article class="xCard col-12 mb-3">
                     <img src="./style/img/blog_music_techo-1200x600.jpg" class="mb-2" alt="mixer">
-                    <div class="my_description px-2">
+                    <div class="my_description px-2 pt-2">
                         <h1 class="mb-1">
-                            While my guitar gently weeps
+                            Technology and Music
                         </h1>
                         <p class="crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Iusto asperiores laudantium debitis voluptas!</p>
@@ -30,7 +30,7 @@
                 </article>
                 <div class="d-flex justify-content-between mb-3">
                     <article class="yCard">
-                        <img src="./style/img/blog-post3-600x900.jpg" class="mb-2" alt="mixer">
+                        <img src="./style/img/blog-post3-600x900.jpg" class="mb-2" alt="guitars">
                         <div class="my_description px-2">
                             <h1 class="mb-1">
                                 While my guitar gently weeps
@@ -40,7 +40,7 @@
                         </div>
                     </article>
                     <article class="yCard">
-                        <img src="./style/img/blog-post4-600x900.jpg" class="mb-2" alt="mixer">
+                        <img src="./style/img/blog-post4-600x900.jpg" class="mb-2" alt="vynils">
                         <div class="my_description px-2">
                             <h1 class="mb-1">
                                 It just sounds better
@@ -51,10 +51,10 @@
                     </article>
                 </div>
                 <article class="xCard col-12 border">
-                    <img src="./style/img/blog_music_techo-1200x600.jpg" class="mb-2" alt="mixer">
-                    <div class="my_description px-2">
+                    <img src="./style/img/blog_flavor_rock-600x300.jpg" class="mb-2" alt="rocker">
+                    <div class="my_description px-2 pt-2">
                         <h1 class="mb-1">
-                            While my guitar gently weeps
+                            The flavor of rock
                         </h1>
                         <p class="crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Iusto asperiores laudantium debitis voluptas!</p>
@@ -64,7 +64,7 @@
             </div>
             <div id="rightNews" class="col-4 d-flex flex-column justify-content-between">
                 <article class="yCard col-12">
-                    <img src="./style/img/blog-post1-600x900.jpg" class="mb-2" alt="mixer">
+                    <img src="./style/img/blog-post1-600x900.jpg" class="mb-2" alt="night street">
                     <div class="my_description px-2">
                         <h1 class="mb-1">
                             Taking it back to the old school
@@ -103,7 +103,7 @@ export default {
 }
 
 #news {
-    height: 50rem;
+    padding-bottom: 4rem;
     background: $bg-color-darkest;
 }
 
