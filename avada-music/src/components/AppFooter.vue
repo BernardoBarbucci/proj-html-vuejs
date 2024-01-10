@@ -1,5 +1,5 @@
 <template>
-    <footer class="container-fluid">
+    <footer>
         <section id="footerMenu" class="col-12 d-flex align-items-center justify-content-between">
             <div class="footerLogo">
                 <img src="./style/img/logo_footer.png" alt="logo footer">
@@ -74,4 +74,3 @@ footer {
     }
 }
 </style>
-
