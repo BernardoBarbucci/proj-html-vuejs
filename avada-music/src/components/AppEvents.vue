@@ -19,39 +19,9 @@
     <section id="events" class="container-fluid">
 
         <div class="col-10 offset-1">
-            <!-- <article class="col-12 d-flex align-items-center custom_event">
-                <p class="mx-2 text-white">+</p>
-                <p class="event_name text-uppercase">
-                    17/08/2024 gem festival 2024 anakalia, georgia
-                </p>
-            </article>
-            <article class="col-12 d-flex align-items-center custom_event">
-                <p class="mx-2 text-white">+</p>
-                <p class="event_name text-uppercase">
-                    24/09/2024 groovefest dominical republic
-                </p>
-            </article>
-            <article class="col-12 d-flex align-items-center custom_event">
-                <p class="mx-2 text-white">+</p>
-                <p class="event_name text-uppercase">
-                    31/10/2024 oasis festival 2024 marrakech, morocco
-                </p>
-            </article>
-            <article class="col-12 d-flex align-items-center custom_event">
-                <p class="mx-2 text-white">+</p>
-                <p class="event_name text-uppercase">
-                    07/01/2024 moga festival - essaouria, morocco
-                </p>
-            </article>
-            <article class="col-12 d-flex align-items-center custom_event">
-                <p class="mx-2 text-white">+</p>
-                <p class="event_name text-uppercase">
-                    10/12/2024 envision festival - uvita, costa rica
-                </p>
-            </article> -->
 
             <article v-for="(event, index) in events" :key="index" class="col-12 d-flex align-items-center custom_event"
-                @click="toggleEventSize(index)">
+                @click="toggleEventSize(index)" :class="{ expanded: event.expanded }">
                 <p class="mx-2 text-white">+</p>
                 <p class="event_name text-uppercase">
                     {{ event.name }}
@@ -72,6 +42,22 @@
 <script>
 export default {
     name: 'AppEvents',
+    data() {
+        return {
+            events: [
+                { name: 'Gem Festival 2024 Anakalia, Georgia', expanded: false },
+                { name: 'Groovefest Dominical Republic', expanded: false },
+                { name: 'Oasis Festival 2024 Marrakech, Morocco', expanded: false },
+                { name: 'Moga Festival - Essaouria, Morocco', expanded: false },
+                { name: 'Envision Festival - Uvita, Costa Rica', expanded: false }
+            ]
+        };
+    },
+    methods: {
+        toggleEventSize(index) {
+            this.$set(this.events, index, { ...this.events[index], expanded: !this.events[index].expanded });
+        }
+    }
 }
 </script>
 
@@ -91,6 +77,8 @@ export default {
             background-color: $bg-color-dark;
             min-height: 2rem;
             margin-bottom: .5rem;
+            cursor: pointer;
+            transition: height 0.3s linear;
 
             p {
                 margin-bottom: 0;
@@ -100,6 +88,11 @@ export default {
                 font-size: .75rem;
                 color: $theme-color;
             }
+        }
+
+        // Aggiunto il blocco CSS per l'espansione
+        .expanded {
+            height: 8rem;
         }
     }
 }
