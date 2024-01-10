@@ -4,10 +4,10 @@
             <div class="custom_logo">
                 <img src="./style/img/avada-music-logo.png" alt="logo">
             </div>
-            <div class="custom_menu" @click="showMenu">
+            <div class="custom_menu" @click="toggleMenu">
                 <i class="fa-solid fa-bars"></i>
                 <!-- menu da mostrare -->
-                <ul>
+                <ul v-if="showMenu" class="menu-overlay" @click="toggleMenu">
                     <li></li>
                 </ul>
             </div>
