@@ -26,12 +26,13 @@
                     <p class="event_name text-uppercase">{{ event.name }}</p>
                 </div>
                 <div :id="'eventCollapse' + index" class="collapse custom-collapse" :class="{ 'show': event.expanded }">
-                    <div style="height: 100%;" class="container-fluid d-flex flex-row">
+                    <div style="height: 100%;" class="container-fluid d-flex flex-row pb-3">
                         <!-- elementi mostrati nel collapse -->
                         <img src="./style/img/georgia-map.png" id="maps" alt="georgia-map">
-                        <div id="events-infos">
+                        <div id="events-infos" class="ps-3 d-flex flex-column justify-content-around">
                             <h1>Untold Stories</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam, praesentium
+                            <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam,
+                                praesentium
                                 assumenda iusto repellendus sit tempora, enim dolores quas.</p>
                             <button type="button" class="btn btn-danger">BOOK NOW</button>
                         </div>
@@ -94,7 +95,7 @@ export default {
 }
 
 #maps {
-    height: 5rem;
+    height: 7rem;
 }
 
 #events-infos {
@@ -110,6 +111,7 @@ export default {
 
     button {
         height: 1.6rem;
+        width: 6rem;
         font-size: .6rem;
         font-weight: 600;
         border-radius: 5px;
