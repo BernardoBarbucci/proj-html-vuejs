@@ -118,4 +118,25 @@ header {
         color: $white;
     }
 }
+
+// toggleMenu sass
+.menu-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: $theme-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu-overlay li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
 </style>
