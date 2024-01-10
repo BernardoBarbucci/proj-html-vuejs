@@ -31,7 +31,8 @@
                         <img src="./style/img/georgia-map.png" id="maps" alt="georgia-map">
                         <div id="events-infos" class="ps-3 d-flex flex-column justify-content-around">
                             <h1>Untold Stories</h1>
-                            <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam,
+                            <p class="mb-1 crimson-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                                aliquam,
                                 praesentium
                                 assumenda iusto repellendus sit tempora, enim dolores quas.</p>
                             <button type="button" class="btn btn-danger">BOOK NOW</button>

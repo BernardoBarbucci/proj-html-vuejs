@@ -6,12 +6,9 @@
             </div>
             <div class="footerInfos">
                 <ul class="d-flex flex-row">
-                    <li>Home</li>
-                    <li>Meet the Band</li>
-                    <li>Live Dates</li>
-                    <li>Latest News</li>
-                    <li>Albums</li>
-                    <li>Fans</li>
+                    <li v-for="(menuItem, index) in menuItems" :key="index">
+                        {{ menuItem }}
+                    </li>
                 </ul>
             </div>
         </section>
@@ -30,11 +27,19 @@
         </section>
     </footer>
 </template>
+
 <script>
 export default {
     name: 'AppFooter',
+    props: {
+        menuItems: {
+            type: Array,
+            required: true,
+        },
+    },
 }
 </script>
+
 <style lang="scss">
 @import './style/partials/variables.scss';
 

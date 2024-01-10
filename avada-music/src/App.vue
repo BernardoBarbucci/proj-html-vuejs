@@ -6,7 +6,7 @@
         <AppComment />
         <AppEvents />
     </Appmain>
-    <AppFooter />
+    <AppFooter :menuItems="reusableMenuItems" />
 </template>
 
 <script>
