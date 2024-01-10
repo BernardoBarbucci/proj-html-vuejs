@@ -8,7 +8,7 @@
                 <i class="fa-solid fa-bars"></i>
                 <!-- menu da mostrare -->
                 <ul v-if="showMenu" class="menu-overlay" @click="toggleMenu">
-                    <li></li>
+                    <li v-for="item in menuItems" :key="item"></li>
                 </ul>
             </div>
         </section>
@@ -41,6 +41,14 @@ export default {
         secondaryTitle: {
             type: String,
             default: 'Default secondary title'
+        },
+        // menu logic
+        menuItems: {
+            type: Array,
+            // parte sotto sostituibile anche con un arrow function, basta che restituisca una function senza argomenti
+            default: function () {
+                return [];
+            }
         }
     }
 }
