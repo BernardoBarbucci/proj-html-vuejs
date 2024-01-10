@@ -15,9 +15,11 @@
             </div>
         </div>
     </section>
+    <!-- events -->
     <section id="events" class="container-fluid">
+
         <div class="col-10 offset-1">
-            <article class="col-12 d-flex align-items-center custom_event">
+            <!-- <article class="col-12 d-flex align-items-center custom_event">
                 <p class="mx-2 text-white">+</p>
                 <p class="event_name text-uppercase">
                     17/08/2024 gem festival 2024 anakalia, georgia
@@ -46,11 +48,22 @@
                 <p class="event_name text-uppercase">
                     10/12/2024 envision festival - uvita, costa rica
                 </p>
+            </article> -->
+
+            <article v-for="(event, index) in events" :key="index" class="col-12 d-flex align-items-center custom_event"
+                @click="toggleEventSize(index)">
+                <p class="mx-2 text-white">+</p>
+                <p class="event_name text-uppercase">
+                    {{ event.name }}
+                </p>
             </article>
+
         </div>
+
     </section>
+    <!-- latest news -->
     <section class="latestNews d-flex align-items-center justify-content-center">
-        <p class="text-white mb-0">
+        <p class="text-black mb-0">
             VIEW ALL LIVE DATES
         </p>
     </section>

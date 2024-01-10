@@ -87,7 +87,7 @@
         </div>
     </section>
     <section class="latestNews d-flex align-items-center justify-content-center">
-        <p class="text-white mb-0">
+        <p class="text-black mb-0">
             VIEW ALL THE LATEST NEWS
         </p>
     </section>
