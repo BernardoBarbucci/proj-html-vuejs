@@ -1,6 +1,6 @@
 <template>
     <header class="container-fluid pt-2">
-        <!-- Logo e icona del menu sempre visibili -->
+
         <section id="top-section" class="d-flex flex-row justify-content-between px-3">
             <div class="custom_logo">
                 <img src="./style/img/avada-music-logo.png" alt="logo">
@@ -15,7 +15,6 @@
             <li v-for="item in menuItems" :key="item">{{ item }}</li>
         </ul>
 
-        <!-- Resto dell'header -->
         <section id="hero" class="d-flex flex-column align-items-center">
             <h1 class="fw-bold text-white">
                 {{ headerTitle }}
@@ -30,6 +29,7 @@
                     DATES</button>
             </div>
         </section>
+
     </header>
 </template>  
 
