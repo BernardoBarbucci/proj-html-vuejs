@@ -122,9 +122,18 @@ export default {
             position: relative;
             height: 10rem;
 
+            &:hover .my_description {
+                display: none;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
+
+                &:hover {
+                    opacity: 0.7;
+                    filter: rgba(236, 72, 88, 0.8);
+                }
             }
 
             .my_description {
@@ -144,11 +153,20 @@ export default {
         .yCard {
             height: 20.4rem;
             width: 48%;
+            // position: relative;
+
+            // &:hover .my_description {
+            //     display: none;
+            // }
 
             img {
                 height: 80%;
                 width: 100%;
             }
+
+            // .my_description {
+            //     position: absolute;
+            // }
         }
     }
 
