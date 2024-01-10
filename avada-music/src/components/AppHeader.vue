@@ -17,7 +17,7 @@
                     <img src="./style/img/avada-music-logo.png" alt="logo">
                 </div>
                 <div class="custom_menu" @click="toggleMenu">
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-regular fa-x customX"></i>
                 </div>
             </section>
             <!-- menu list onclick -->
@@ -155,8 +155,15 @@ header {
 }
 
 .menu-overlay li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    color: #f7929b;
+    transition: linear .3s;
     cursor: pointer;
+
+    &:hover {
+        color: white;
+        transform: scale(1.2);
+    }
 }
 
 ul {
@@ -165,6 +172,17 @@ ul {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         width: 100%;
+
+        .customX {
+            color: #f7929b;
+            transition: linear .3s;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+                transform: scale(1.2);
+            }
+        }
     }
 }
 </style>
