@@ -87,10 +87,6 @@ header {
 
 #hero {
     height: 17.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     h1 {
         font-size: 4rem;
