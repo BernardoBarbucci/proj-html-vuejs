@@ -1,7 +1,7 @@
 <template>
     <header class="container-fluid pt-2">
 
-        <section id="top-section" class="d-flex flex-row justify-content-between px-3">
+        <section class="d-flex flex-row justify-content-between px-3 top-section">
             <div class="custom_logo">
                 <img src="./style/img/avada-music-logo.png" alt="logo">
             </div>
@@ -11,7 +11,16 @@
         </section>
 
         <!-- Menu da mostrare -->
-        <ul v-if="showMenu" class="menu-overlay" @click="toggleMenu">
+        <ul v-if="showMenu" class="menu-overlay pt-2">
+            <section class="d-flex flex-row justify-content-between top-section">
+                <div class="custom_logo">
+                    <img src="./style/img/avada-music-logo.png" alt="logo">
+                </div>
+                <div class="custom_menu" @click="toggleMenu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </section>
+            <!-- menu list onclick -->
             <li v-for="item in menuItems" :key="item">{{ item }}</li>
         </ul>
 
@@ -79,18 +88,15 @@ header {
 
 }
 
-#top-section {
-    position: relative;
+.top-section {
 
     .custom_logo img {
         height: 2rem;
         margin-bottom: 5rem;
-        z-index: 2;
     }
 
     .custom_menu i {
         color: $white;
-        z-index: 2;
     }
 }
 
@@ -136,22 +142,29 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 49.5%;
+    height: 400px;
     background-color: #ec4858;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
     color: white;
     font-size: 1.2rem;
-    z-index: 1;
 }
 
 .menu-overlay li {
     margin-bottom: 1rem;
     cursor: pointer;
+}
+
+ul {
+
+    .top-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 100%;
+    }
 }
 </style>
