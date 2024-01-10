@@ -41,10 +41,6 @@ export default {
 <style lang="scss">
 @use './components/style/main.scss' as *;
 @use './components/style/partials/variables.scss' as *;
-
-// * {
-//     background-color: $bg-color-darkest;
-// }
 </style>
 
 

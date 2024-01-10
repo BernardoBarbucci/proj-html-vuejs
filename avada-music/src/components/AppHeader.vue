@@ -4,8 +4,12 @@
             <div class="custom_logo">
                 <img src="./style/img/avada-music-logo.png" alt="logo">
             </div>
-            <div class="custom_menu">
+            <div class="custom_menu" @click="showMenu">
                 <i class="fa-solid fa-bars"></i>
+                <!-- menu da mostrare -->
+                <ul>
+                    <li></li>
+                </ul>
             </div>
         </section>
         <section id="hero" class="d-flex flex-column align-items-center">
