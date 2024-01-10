@@ -8,7 +8,7 @@
                 <i class="fa-solid fa-bars"></i>
                 <!-- menu da mostrare -->
                 <ul v-if="showMenu" class="menu-overlay" @click="toggleMenu">
-                    <li v-for="item in menuItems" :key="item"></li>
+                    <li v-for="item in menuItems" :key="item">{{ item }}</li>
                 </ul>
             </div>
         </section>
