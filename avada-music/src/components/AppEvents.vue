@@ -18,13 +18,24 @@
     <!-- events -->
     <section id="events" class="container-fluid">
         <div class="col-10 offset-1">
-            <article v-for="(event, index) in events" :key="index" class="col-12 d-flex align-items-center custom_event"
-                data-bs-toggle="collapse" :data-bs-target="'#eventCollapse' + index" aria-expanded="false"
-                aria-controls="'eventCollapse' + index">
-                <p class="mx-2 text-white">+</p>
-                <p class="event_name text-uppercase">{{ event.name }}</p>
+            <article v-for="(event, index) in events" :key="index"
+                class="col-12 d-flex flex-column align-items-start custom_event" data-bs-toggle="collapse"
+                :data-bs-target="'#eventCollapse' + index" aria-expanded="false" aria-controls="'eventCollapse' + index">
+                <div class="d-flex align-items-center py-2">
+                    <p class="mx-2 text-white">+</p>
+                    <p class="event_name text-uppercase">{{ event.name }}</p>
+                </div>
                 <div :id="'eventCollapse' + index" class="collapse custom-collapse" :class="{ 'show': event.expanded }">
-                    <p style="height: 10rem;">hello</p>
+                    <div style="height: 100%;" class="container-fluid d-flex flex-row">
+                        <!-- elementi mostrati nel collapse -->
+                        <img src="./style/img/georgia-map.png" id="maps" alt="georgia-map">
+                        <div id="events-infos">
+                            <h1>Untold Stories</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam, praesentium
+                                assumenda iusto repellendus sit tempora, enim dolores quas.</p>
+                            <button type="button" class="btn btn-danger">BOOK NOW</button>
+                        </div>
+                    </div>
                 </div>
             </article>
         </div>
@@ -79,6 +90,29 @@ export default {
             font-size: .75rem;
             color: $theme-color;
         }
+    }
+}
+
+#maps {
+    height: 5rem;
+}
+
+#events-infos {
+    h1 {
+        font-size: .75rem;
+        color: $white;
+    }
+
+    p {
+        font-size: .65rem;
+        color: $p-text;
+    }
+
+    button {
+        height: 1.6rem;
+        font-size: .6rem;
+        font-weight: 600;
+        border-radius: 5px;
     }
 }
 </style>
