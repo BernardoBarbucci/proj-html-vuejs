@@ -17,10 +17,15 @@
         </section>
         <section id="copyright" class="col-12 d-flex align-items-center justify-content-between">
             <div class="left-part">
-                <p></p>
+                <p class="mb-0 crimson-font">© Copyright 2012 - 2020 | AVADA THEME BY THEMEFUSION | ALL RIGHTS RESERVED |
+                    POWERED BY BERNA
+                </p>
             </div>
             <div class="right-part">
-                <!-- inserire icone da fontawesome dei 4 social (fb, X, insta, youtube) -->
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
             </div>
         </section>
     </footer>
@@ -71,6 +76,40 @@ footer {
     #copyright {
         height: 5rem;
         background-color: $bg-color-darkest;
+        padding: 0 .5rem;
+
+        .left-part {
+            color: $p-text;
+            font-size: .6rem;
+
+            p {
+                transition: linear .3s;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        .right-part {
+            color: $p-text;
+
+            i {
+                margin-left: .5rem;
+                background-color: $bg-color-dark;
+                height: 1.5rem;
+                width: 1.5rem;
+                border-radius: 3px;
+                text-align: center;
+                line-height: 1.5rem;
+                transition: linear .3s;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
     }
 }
 </style>
