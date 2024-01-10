@@ -1,6 +1,6 @@
 <template>
     <header class="container-fluid pt-2">
-        <section class="d-flex flex-row justify-content-between px-3">
+        <section id="top-section" class="d-flex flex-row justify-content-between px-3">
             <div class="custom_logo">
                 <img src="./style/img/avada-music-logo.png" alt="logo">
             </div>
@@ -73,6 +73,7 @@ header {
     background-image: url('./style/img/home_slider.jpg');
     background-size: cover;
     background-position: center;
+
 }
 
 .custom_logo img {
@@ -86,6 +87,10 @@ header {
 
 #hero {
     height: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     h1 {
         font-size: 4rem;
@@ -120,10 +125,14 @@ header {
 }
 
 // toggleMenu sass
+
 .menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: $theme-color;
+    height: 49.5%;
+    background-color: #ec4858;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +141,7 @@ header {
     padding: 0;
     margin: 0;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .menu-overlay li {
