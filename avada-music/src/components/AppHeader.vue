@@ -1,17 +1,21 @@
 <template>
     <header class="container-fluid pt-2">
+        <!-- Logo e icona del menu sempre visibili -->
         <section id="top-section" class="d-flex flex-row justify-content-between px-3">
             <div class="custom_logo">
                 <img src="./style/img/avada-music-logo.png" alt="logo">
             </div>
             <div class="custom_menu" @click="toggleMenu">
                 <i class="fa-solid fa-bars"></i>
-                <!-- menu da mostrare -->
-                <ul v-if="showMenu" class="menu-overlay" @click="toggleMenu">
-                    <li v-for="item in menuItems" :key="item">{{ item }}</li>
-                </ul>
             </div>
         </section>
+
+        <!-- Menu da mostrare -->
+        <ul v-if="showMenu" class="menu-overlay" @click="toggleMenu">
+            <li v-for="item in menuItems" :key="item">{{ item }}</li>
+        </ul>
+
+        <!-- Resto dell'header -->
         <section id="hero" class="d-flex flex-column align-items-center">
             <h1 class="fw-bold text-white">
                 {{ headerTitle }}
@@ -21,14 +25,13 @@
             </h2>
             <div class="my_buttons d-flex justify-content-between">
                 <button type="button"
-                    class="custom_button text-white d-flex justify-content-center align-items-center">LATEST
-                    ALBUM</button>
+                    class="custom_button text-white d-flex justify-content-center align-items-center">LATEST ALBUM</button>
                 <button type="button" class="btn btn-outline-light d-flex justify-content-center align-items-center">LIVE
                     DATES</button>
             </div>
         </section>
     </header>
-</template>
+</template>  
 
 <script>
 export default {
