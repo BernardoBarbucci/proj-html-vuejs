@@ -56,6 +56,13 @@ export default {
             showMenu: false,
         };
     },
+    // richiamo la function con methods
+    methods: {
+        toggleMenu() {
+            // cambia il valore di showMenu nel componente
+            this.showMenu = !this.showMenu;
+        }
+    },
 }
 </script>
 
