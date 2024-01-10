@@ -50,7 +50,12 @@ export default {
                 return [];
             }
         }
-    }
+    },
+    data() {
+        return {
+            showMenu: false,
+        };
+    },
 }
 </script>
 
