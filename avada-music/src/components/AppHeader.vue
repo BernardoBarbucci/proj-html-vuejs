@@ -79,13 +79,19 @@ header {
 
 }
 
-.custom_logo img {
-    height: 2rem;
-    margin-bottom: 5rem;
-}
+#top-section {
+    position: relative;
 
-.custom_menu i {
-    color: $white;
+    .custom_logo img {
+        height: 2rem;
+        margin-bottom: 5rem;
+        z-index: 2;
+    }
+
+    .custom_menu i {
+        color: $white;
+        z-index: 2;
+    }
 }
 
 #hero {
@@ -141,6 +147,7 @@ header {
     margin: 0;
     color: white;
     font-size: 1.2rem;
+    z-index: 1;
 }
 
 .menu-overlay li {
